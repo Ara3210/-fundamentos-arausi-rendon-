@@ -1,0 +1,23 @@
+Algoritmo ejercicio1
+    Definir num , digito , suma_digitos como entero
+     Escribir “Introduzca un numero entero y positivo:”
+      Mientras num>0 :
+         digito <- num %10
+           suma_digitos <- 0
+            suma_digitos <- suma_digitos + (digito * digito)
+        Fin Para
+             Si suma_digitos = 1 Entonces
+           Continuar
+        Fin Si
+          Si suma_digitos = 4 Entonces
+      Escribir "El número es infeliz"
+    Sino
+      Escribir "El número es feliz"
+        Fin Si
+
+      Fin Mientras
+
+Fin Algoritmo
+
+
+
