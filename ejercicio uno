@@ -10,5 +10,5 @@ if suma_digito==1:
  continue
  print("el numero es feliz")
 else:
- suma_digitos==3
+ suma_digitos==4
  print("el numero es infeliz)
