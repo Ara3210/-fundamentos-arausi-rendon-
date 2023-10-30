@@ -1,0 +1,14 @@
+#Ejercicio 1 codigo
+num=0
+digito=0
+suma_digitos=0
+num=int(input("introduzca un numero entero y positivo"))
+while true:
+ digito=num/10
+ suma_digitos=sum(int(digito)**2 for digito in str (num))
+if suma_digito==1:
+ continue
+ print("el numero es feliz")
+else:
+ suma_digitos==3
+ print("el numero es infeliz)
