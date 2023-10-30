@@ -1,9 +1,10 @@
 producto=0
 cantidad=0
 precio=0
- porcentaje_de_descuento =0
-  descuento_por_consumo =0
-producto = str(input("\nIngrese el producto a vender:\nPan.\nDulce.\nFríos.\n"))
+porcentaje_de_descuento =0
+descuento_por_consumo =0
+total=0
+ producto = str(input("\nIngrese el producto a vender:\nPan.\nDulce.\nFríos.\n"))
 if producto == "Pan": 
     cantidad = int(input("\nIngrese la cantidad de panes:\n"))
     porcentaje_de_descuento = 0.07
