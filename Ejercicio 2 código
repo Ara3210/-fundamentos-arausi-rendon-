@@ -1,0 +1,43 @@
+producto=0
+cantidad=0
+precio=0
+ porcentaje_de_descuento =0
+  descuento_por_consumo =0
+producto = str(input("\nIngrese el producto a vender:\nPan.\nDulce.\nFríos.\n"))
+if producto == "Pan": 
+    cantidad = int(input("\nIngrese la cantidad de panes:\n"))
+    porcentaje_de_descuento = 0.07
+    precio = int(input("\nIngrese el precio del pan:\n"))
+    if precio <= 8 and precio >= 5:
+        subtotal = (cantidad * precio) - (cantidad * precio * porcentaje_de_descuento) 
+    else:
+        print("\nEl precio indicado no forma parte del rango.\n")
+elif producto == "Dulce":
+    cantidad = int(input("\nIngrese la cantidad de dulces:\n"))
+    porcentaje_de_descuento = 0.12
+    precio = float(input("\nIngrese el precio de los dulces:\n"))
+    if precio <= 16 and precio >= 1.5:
+        subtotal = (cantidad * precio) - (cantidad * precio * porcentaje_de_descuento)  
+    else:
+        print("\nEl precio indicado no forma parte del rango.\n")
+elif producto == "Fríos":
+    cantidad = int(input("\nIngrese la cantidad de productos fríos:\n"))
+    porcentaje_de_descuento = 0.17
+    precio = int(input("\nIngrese el precio del producto frío:\n"))
+    if precio <= 20 and precio >= 3:
+        subtotal = (cantidad * precio) - (cantidad * precio * porcentaje_de_descuento)
+    else:
+        print("\nEl precio indicado no forma parte del rango.\n")
+else:
+    print("\nPor favor indique un producto de las opciones dadas.\n")
+
+print(f"\nEl subtotal es {subtotal}$.")
+if subtotal > 50:
+    descuento_por_consumo = 0.05
+    total = subtotal - (subtotal * descuento_por_consumo) 
+    print(f"\nEl total de la compra es {total}$")
+    print("¡¡¡Pan canilla de regalo!!!\n")
+else:
+    descuento_por_consumo = 0
+    total = subtotal - (subtotal * descuento_por_consumo) 
+    print(f"\nEl total de la compra es {total}$\n")
